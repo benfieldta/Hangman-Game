@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<link rel="stylesheet" href="Assets/CSS/reset.css">
+	<link rel="stylesheet" href="Assets/CSS/style.css">
+	<script src="Assets/Javascript/game.js"></script>
+</head>
+<body>
+		<br>
+	<img src="Assets/Images/logo.png" alt="Logo">
+		<br>
+		<br>
+		<ul>
+		   <li>INSTRUCTIONS</li>
+		   <li>To begin, click in the box, type a letter, then click "Try Letter"</li>
+		   <li>If your guess was correct, it will fill in the blank fields</li>
+		   <li>If your guess is incorrect, it will be displayed in the Incorrect Guesses section</li>
+		   <li>Guess all of the letters before your hangman is built and YOU WIN!</li>
+		   <li>Once the game is over, if you would like to play again, select "Restart Game"</li>
+		</ul>
+		<br>
+	   <div id="wordView"></div>
+	   <br>
+	   <form name="letterInput">
+	      <input id="inputBox" type="text" size="5" maxlength="1">
+	      <input id="inputButton" type="button" value="Try Letter" onClick="checkLetter()">
+	      <input id="inputButton" type="button" value="Restart Game" onClick="location.reload()">
+		<br>
+		<br>
+	   <p id="wrongLetters">Incorrect Guesses:</p>
+	   	<br>
+	   <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br/>
+	   	<br>
+	</form>
+
+</body>
+</html>
